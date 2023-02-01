@@ -1,0 +1,3 @@
+--INSERT INTO STUDENT (id, username, email, note ) VALUES (1, 'student1','tudent1@test.com', 9);
+--INSERT INTO STUDENT (id, username, email, note ) VALUES (2, 'studenté','tudent2@test.com', 12);
+

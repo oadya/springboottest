@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="70.93">
+<testcase classname="Gestion des notes des étudiants" name="Vérifier la note et la mention des étudiants" time="1.392">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+When Quand on récupère les données de l'étudiant "student1".................passed
+Then Vérifier que sa note est égale à "8" et on sa mention est "Echec"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des notes des étudiants" name="Mise à jour des notes d'un étudiant" time="0.332">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+Given Etant donné un professeur.............................................passed
+And Le professeur a les habilitations de modifier les notes.................passed
+When Le professeur modifie la note d'un étudiant avec les données ci-dessus suite au rattrapage.passed
+Then Verifier que les informations suivantes sont affichées.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des notes des étudiants" name="Mise à jour des notes des étudiants suite au ratrappage" time="0.215">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+When on modifie la note de l étudiant "student1" avec la note "14"..........passed
+Then verifier que la nouvelle mention est "Bien"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des notes des étudiants" name="Mise à jour des notes des étudiants suite au ratrappage 2" time="0.174">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+When on modifie la note de l étudiant "student2" avec la note "16"..........passed
+Then verifier que la nouvelle mention est "Tres bien".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des notes des étudiants" name="Mise à jour es notes des étudiants suite ratrappage à partir du tableau excel" time="4.994">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+When on modifie la note de l étudiant avec la colonne ratrappage du tableau excel "1".passed
+Then vérifier que la nouvelle note de cet étudiant corresponde à celle indiquée dans la colonne nouvelle-note tableau excel.passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des notes des étudiants" name="Mise à jour es notes des étudiants suite ratrappage à partir du tableau excel 2" time="0.501">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+When on modifie la note de l étudiant avec la colonne ratrappage du tableau excel "2".passed
+Then vérifier que la nouvelle note de cet étudiant corresponde à celle indiquée dans la colonne nouvelle-note tableau excel.passed
+]]></system-out>
+</testcase>
+<testcase classname="Gestion des notes des étudiants" name="Récupérer tous les étudiants de la bases" time="2.011">
+<system-out><![CDATA[Given Etant donné cette liste d' étudiants..................................passed
+When Quand on requete l'api de récu^ération des tous les étudiants..........passed
+Then Tous les étudiants en base doivent être remontés et contient "5" elements.passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.testing.springboottest.entity.Student;
 
+/**
+ * https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html
+ * @author ADYAPBP
+ *
+ */
 @FeignClient(name = "microservice-users", url = "localhost:8080")
 //@ImportAutoConfiguration({RibbonAutoConfiguration.class, FeignRibbonClientAutoConfiguration.class, FeignAutoConfiguration.class})
 public interface StudentClient {

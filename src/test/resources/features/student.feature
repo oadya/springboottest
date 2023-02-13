@@ -3,7 +3,7 @@ Feature: Gestion des notes des étudiants d'une classe
 
   # tableau commun exécutée pour chaque scenario
   Background: 
-    Given Etant donné une classe content cette liste d'étudiants
+    Given Etant donné une classe contenant cette liste d'étudiants
       | username | email             | note | mention    |
       | student1 | student1@test.com |    8 | Echec      |
       | student2 | student2@test.com |   11 | Passable   |
@@ -62,10 +62,3 @@ Feature: Gestion des notes des étudiants d'une classe
     When Quand on requete l'api de récu^ération des tous les étudiants
     Then Tous les étudiants en base doivent être remontés et contient "5" elements
     
-# 
-#mvn test
-#mvn test -Dcucumber.options="--help"
-#mvn test -Dcucumber.options="src/test/resources/features/student.feature"
-#mvn test -Dcucumber.options="src/test/resources/features/student.feature:7"
-#mvn test -Dcucumber.options="--tags @student"
-#mvn test -Dcucumber.options="src/test/resources/features/student.feature" -Dcucumber.options="--tags @student"

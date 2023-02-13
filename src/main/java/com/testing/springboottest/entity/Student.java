@@ -13,8 +13,6 @@ import lombok.Data;
 
 @Entity
 @Table(name = "STUDENTS")
-@Data
-@Builder(toBuilder = true)
 public class Student {
 
 	@Id

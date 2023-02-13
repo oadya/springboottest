@@ -83,7 +83,7 @@ public class StudentStep {
 		// System.out.println("Execute after each Step");
 	}
 
-	@Given("Etant donné une classe content cette liste d'étudiants")
+	@Given("Etant donné une classe contenant cette liste d'étudiants")
 	public void etant_donné_une_classe_content_cette_liste_d_étudiants(DataTable dataTable) {
 
 		// read datatable
